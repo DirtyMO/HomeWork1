@@ -1,0 +1,50 @@
+package ru.levelup;
+
+public class Lesson1Example {
+    public static void main(String[] args) {
+
+        int value1 = 10;
+        int value2 = 5;
+
+        printWord("sum = " + summa(value1, value2));
+        printWord(subtract(value1, value2));
+        printWord(division(value1, value2));
+        printWord(multiply(value1, value2));
+
+        int x = -value2 / value1;
+        System.out.println("x = " + x);
+
+    }
+
+    public static void printWord(String word) {
+        System.out.println(word);
+
+    }
+
+    public static void printWord(int result) {
+        System.out.println(result);
+
+    }
+
+    public static int summa(int arg1, int arg2) {
+        return arg1 + arg2;
+
+    }
+
+    public static int subtract(int arg1, int arg2) {
+        return arg1 - arg2;
+
+
+    }
+
+    public static int division(int arg1, int arg2) {
+        return arg1 / arg2;
+
+    }
+
+    public static int multiply(int arg1, int arg2) {
+        return arg1 * arg2;
+
+    }
+
+}

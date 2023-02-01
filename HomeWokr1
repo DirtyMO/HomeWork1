@@ -5,13 +5,16 @@ public class Lesson1Example {
 
         int value1 = 10;
         int value2 = 5;
+        
+        int a = 5;
+        int b = 10;
 
         printWord("sum = " + summa(value1, value2));
         printWord(subtract(value1, value2));
         printWord(division(value1, value2));
         printWord(multiply(value1, value2));
 
-        int x = -value2 / value1;
+        int x = -b / a;
         System.out.println("x = " + x);
 
     }

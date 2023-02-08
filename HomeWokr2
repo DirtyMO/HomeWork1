@@ -1,0 +1,49 @@
+package HomeWork;
+
+public class ExampleTwo {
+    public static void main(String[] args) {
+
+        // математические действия
+        System.out.println(Math.round(3.5)); //если больше или равно 0,5 то в обольшу сторону иначе в меньшую
+        System.out.println(Math.floor(3.5)); //округяем в меньшую сторону
+        System.out.println(Math.ceil(3.5)); //округляем в большую сторону
+        System.out.println("____________________________________________");
+
+        int a = 2;
+        int b = 11;
+        int c = 4;
+        System.out.println(cosmos(250, 20, 10));      // Естественно для проссчета первой космической нужны другие данные
+        System.out.println("--------------------------------------------");
+        System.out.println("Е = " + staticEnergy(5, 7));
+
+        //вычисляем корни квадратного уравнения ax2+bx+c=0
+
+        double d = b * b - 4 * a * c;
+
+        if (d > 0) {
+            double x1 = (-b - Math.sqrt(d)) / (2 * a);
+            double x2 = (-b + Math.sqrt(d)) / (2 * a);
+            System.out.println("----------------------");
+            System.out.println(x1 + x2);
+        } else if (d == 0) {
+            double x;
+            x = -b / 2;
+            System.out.println("-----------------------");
+            System.out.println(x);
+        } else {
+            System.out.println("-----------------------");
+            System.out.println("Не имеет корней");
+
+        }
+
+    }
+
+    public static double cosmos(int G, int M, int R) { //вычисляем первую космическую скорость
+        return Math.sqrt(G * (M / R));
+    }
+
+    public static double staticEnergy(int m, int v) { // формула рассчета кенетической энергии
+        return m * Math.pow(v, 2) / 2;
+    }
+
+}

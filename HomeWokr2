@@ -42,7 +42,7 @@ public class ExampleTwo {
         return Math.sqrt(G * (M / R));
     }
 
-    public static double staticEnergy(int m, int v) { // формула рассчета кенетической энергии
+    public static double staticEnergy(int m, int v) { // формула рассчета кинетической энергии
         return m * Math.pow(v, 2) / 2;
     }
 

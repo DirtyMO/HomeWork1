@@ -1,0 +1,17 @@
+public class once {
+    public static void main(String[] args) {
+        for (int value = 2; value <= 10000; value++) {
+            boolean isPrime = true;
+
+            for (int value2 = 2; value2 < value; value2++) {
+                if (value % value2 == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.println(value);
+            }
+        }
+    }
+}
